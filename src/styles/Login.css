@@ -1,0 +1,69 @@
+.gradient-custom {
+    /* fallback for old browsers */
+    background: pink;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: pink;
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(pink);
+     height: 300px;
+     padding-top: 50px;
+     padding-left: 50px;
+    
+    }
+    
+.card bg-dark text-white
+{
+    border-radius: 1rem;
+    color:aqua;
+    height: 100px;
+    width:300px;
+}
+
+.login {
+    margin-top: 100px;
+    padding: 0px 30px;
+    padding-bottom: 50px;
+    padding-left: 350px;
+  }
+  
+  .login__wrapper {
+    padding: 20px;
+    border-radius: 5px;
+    background: orange;
+    height: 450px;
+    width: 400px;
+    
+  }
+  
+  .login__title {
+    color: var(--heading-color);
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  input {
+    display: block;
+    height: 30px;
+    width: 280px;
+    padding: 0 20px;
+}
+
+input,
+input::placeholder {
+    font: 20px/3 sans-serif;
+    
+}
+
+label{
+    color: black;
+    font-size: 20px;
+    
+}
+.btn{
+    width: 280px;
+    height: 30px;
+    font-size: 15px;
+    
+}

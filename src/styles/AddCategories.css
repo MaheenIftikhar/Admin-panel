@@ -1,0 +1,68 @@
+.categories {
+  margin-top: 100px;
+  
+  padding: 0px 30px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+  }
+  
+  .categories__title {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 2rem;
+  }
+  .categories__wrapper {
+    padding: 20px;
+    border-radius: 5px;
+    background: rgb(254, 168, 8);
+    height: 600px;
+    width: 100%;
+    
+  }
+
+  .crud {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table td {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(54, 135, 211);
+    text-align: center;
+    color: white;
+}
+thead td {
+  color:black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+table td button {
+  padding: 5px 10px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+table td button.edit {
+  border: 1px solid green;
+  background-color: rgb(7, 168, 7);
+  color: white;
+}
+table td button.edit:hover {
+  background-color: rgb(3, 71, 3);
+}
+table td button.delete {
+  border: 1px solid red;
+  background-color: rgb(219, 19, 19);
+  color: white;
+}
+table td button.delete:hover {
+  background-color: rgb(92, 5, 5);
+}

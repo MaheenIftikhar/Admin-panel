@@ -1,0 +1,24 @@
+.sellers{
+    margin-top: 100px;
+  
+    padding: 0px 30px;
+    padding-bottom: 50px;
+    
+  }
+  
+  .sellers__wrapper {
+    padding: 20px;
+    border-radius: 5px;
+    background: rgb(254, 168, 8);
+    height: 600px;
+    width: 100%;
+    
+  }
+
+  
+  .seller__title {
+    font-size: 1.5rem;
+    color: rgb(6, 6, 6);
+    
+    margin-bottom: 4rem;
+  }
