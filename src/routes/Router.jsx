@@ -11,6 +11,7 @@ import Login from "../pages/Login";
 import AddCategories from "../pages/AddCategories";
 import ManageCustomer from "../pages/ManageCustomer";
 import ManageSeller from "../pages/ManageSeller";
+import Details from "../pages/Details";
 const Router = () => {
   return (
     <Routes>
@@ -24,9 +25,10 @@ const Router = () => {
       <Route path="/AuctionProducts" element={<AuctionProducts />} />
       <Route path="/settings" element={<Settings />} />
       <Route path="/AddCategories" element={<AddCategories />} />
-      
+
+      <Route path="/details" element={<Details />} />
       <Route path="/managecustomer" element={<ManageCustomer />} />
-      <Route path="/manageseller" element={<ManageSeller/>}/>
+      <Route path="/manageseller" element={<ManageSeller />} />
       <Route path="/login" element={<Login />} />
     </Routes>
   );

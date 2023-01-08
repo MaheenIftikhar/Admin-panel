@@ -1,21 +1,10 @@
-
-   
-   const Details = [
-      {
-        id: 1,
-        name: "HP",
-        category: "car",
-        bid_details: "10-12-21",
-        status:"Active",
-      },
-      {
-        id: 2,
-        name: "Dell",
-        category: "Book",
-        bid_details: "11-12-21",
-        status:"Not Active",
-      },
-    ];
-    
+import React from "react";
+import { useLocation } from "react-router-dom";
+function Details() {
+  const { state } = useLocation();
+  // console.log(state);
+  console.log("from details=>", state);
+  return <div>Details</div>;
+}
 
 export default Details;
