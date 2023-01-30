@@ -1,0 +1,29 @@
+.details{
+    margin-top: 100px;
+    padding: 0px 30px;
+    padding-bottom: 50px;
+    
+  }
+  
+  .details__wrapper {
+    padding: 20px;
+    border-radius: 5px;
+    background: rgb(254, 168, 8);
+    height: 600px;
+    width: 100%;
+    
+  }
+
+.details_card{
+    height:100px;
+    width: 300px;
+    background-color: aquamarine;
+}
+.card{
+  
+  width: 500px;
+  height: 500px;
+  background-color:white;
+  
+
+}

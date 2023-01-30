@@ -43,10 +43,15 @@ const navLinks = [
       display: "Add Categories",
     },
     {
-        path: "/login",
-        icon:"ri-login-circle-line",
-        display: "Login",
-      },
+      path: "/payment",
+      icon: "ri-settings-2-line",
+      display: "Payment",
+    },
+    //{
+        //path: "/login",
+        //icon:"ri-login-circle-line",
+        //display: "Login",
+      //},
     
   ];
   

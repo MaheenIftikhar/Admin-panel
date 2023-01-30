@@ -11,10 +11,11 @@ import Bid from "../../assets/images/Bid.png";
 
 const Sidebar = () => {
   const { loginWithRedirect } = useAuth0();
-  const[isloggedin,setisLoggedin]=useState(false);
+  const[isloggedin,setisLoggedin]=useState("false");
  const Logout=()=> {{
   localStorage.clear('Logout');
   window.location.href = '/login';
+  
   setisLoggedin(false);
  }};
   
@@ -57,19 +58,17 @@ const Sidebar = () => {
         </div>
 
 
-        <div className="sidebar__bottom">
+       {/* <div className="sidebar__bottom">
           <span>
-          <button onClick={() => loginWithRedirect()}>Log In</button>;
+          <button onClick={() =>loginWithRedirect()}>Log In</button>;
           </span>
-
-          
-        </div>
+        </div>*/}
 
 
 
         <div className="sidebar__bottom">
           <span>
-           <button btn btn-primary onClick={Logout}>Logout</button>
+           <button btn-primary onClick={Logout}>Logout</button>
           </span>
 
           

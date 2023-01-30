@@ -92,12 +92,12 @@ function AddCategories() {
                   </tr>
                 </thead>
 {/* jo list hum ne wahan use ki ha lists lain gy */}
-            {lists.map((current) =>
+            {lists.map((current,key) =>
               updateState === current.id ? (
                 <EditList current={current} lists={lists} setList={setList} />
               ) : (
                 <tbody>
-                  <tr>
+                  <tr key={key}>
                      
                     <td>{current.name}</td>
                     <td>{current.category}</td>
@@ -253,7 +253,7 @@ function AddList({ setList }) {
         placeholder="Enter Price"
         ref={priceRef}
       />
-      <button type="submit">Add</button>
+      <button type="submit">Add Category</button>
     </form>
   );
 }

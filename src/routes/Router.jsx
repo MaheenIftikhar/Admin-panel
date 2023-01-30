@@ -12,6 +12,7 @@ import AddCategories from "../pages/AddCategories";
 import ManageCustomer from "../pages/ManageCustomer";
 import ManageSeller from "../pages/ManageSeller";
 import Details from "../pages/Details";
+import CustomerDetail from "../pages/CustomerDetail";
 const Router = () => {
   return (
     <Routes>
@@ -29,6 +30,7 @@ const Router = () => {
       <Route path="/details" element={<Details />} />
       <Route path="/managecustomer" element={<ManageCustomer />} />
       <Route path="/manageseller" element={<ManageSeller />} />
+      <Route path="/customerdetail" element={<CustomerDetail />} />
       <Route path="/login" element={<Login />} />
     </Routes>
   );

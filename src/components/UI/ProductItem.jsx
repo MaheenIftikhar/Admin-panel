@@ -22,7 +22,7 @@ const ProductItem = (props) => {
             <i class="ri-user-line"></i> {Discription}
           </p>
           <p>
-            <i class="ri-repeat-line"></i>
+            <i className="ri-repeat-line"></i>
             {Time}
           </p>
           

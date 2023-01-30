@@ -67,10 +67,11 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     margin-top: 2rem;
+    
   }
   
   .stats {
-    background: var(--primary-color);
+    background: rgb(225, 128, 17);
     padding: 30px;
     border-radius: 5px;
     height: 320px;
