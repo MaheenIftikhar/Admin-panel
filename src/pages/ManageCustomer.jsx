@@ -16,6 +16,27 @@ const initialList = [
           PhoneNumber: "000389089",
           status: "Active",
   },
+  {
+    id: 3,
+ name: "Noor Khan",
+ email: "NoorKhan@gmail.com",
+ PhoneNumber: "000389089",
+ status: "Active",
+},
+{
+  id: 4,
+name: "Noor Khan",
+email: "NoorKhan@gmail.com",
+PhoneNumber: "000389089",
+status: "Active",
+},
+{
+  id: 5,
+name: "Noor Khan",
+email: "NoorKhan@gmail.com",
+PhoneNumber: "000389089",
+status: "Active",
+}
 ];
   const ManageCustomer=()=> {
   

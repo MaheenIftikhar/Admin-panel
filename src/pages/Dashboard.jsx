@@ -10,6 +10,7 @@ import recommendCarsData from "../assets/dummy-data/recommendCars";
 
 
 
+
 const carObj = {
   title: "Total Products",
   totalNumber: 750,

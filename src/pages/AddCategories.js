@@ -8,61 +8,61 @@ function AddCategories() {
       id: 1,
       name: "HP",
       category: "car",
-      price: "2222",
+      created_date: "1-2-19",
     },
     {
       id: 2,
       name: "Dell",
       category: "Book",
-      price: "2445",
+      created_date: "1-2-19",
     },
     {
       id: 3,
       name: "Dell",
       category: "Book",
-      price: "2445",
+      created_date: "1-2-19",
     },
     {
       id: 4,
       name: "Dell",
       category: "Book",
-      price: "2445",
+      created_date: "1-2-19",
     },
     {
       id: 5,
       name: "Dell",
       category: "Book",
-      price: "2445",
+      created_date: "1-2-19",
     },
     {
       id: 6,
       name: "Dell",
       category: "Book",
-      price: "2445",
+      created_date: "1-2-19",
     },
     {
       id: 7,
       name: "Dell",
       category: "Book",
-      price: "2445",
+      created_date: "1-2-19",
     },
     {
       id: 8,
       name: "Dell",
       category: "Book",
-      price: "2445",
+      created_date: "1-2-19",
     },
     {
       id: 9,
       name: "Dell",
       category: "Book",
-      price: "2445",
+      created_date: "1-2-19",
     },
     {
       id: 10,
       name: "Dell",
       category: "Book",
-      price: "2445",
+      created_date: "1-2-19",
     },
   ];
 
@@ -84,9 +84,9 @@ function AddCategories() {
           <thead className="heading">
                   <tr>
                      
-                    <td>Name</td>
+                    <td>Id</td>
                     <td>Category</td>
-                    <td>Price</td>
+                    <td>Created Date</td>
                     <td>Action</td>
                     
                   </tr>
@@ -101,7 +101,7 @@ function AddCategories() {
                      
                     <td>{current.name}</td>
                     <td>{current.category}</td>
-                    <td>{current.price}</td>
+                    <td>{current.created_date}</td>
                     <td>
                       <button
                         className="edit"
@@ -140,10 +140,10 @@ function AddCategories() {
     event.preventDefault();
     const name = event.target.elements.name.value;
     const category = event.target.elements.category.value;
-    const price = event.target.elements.price.value;
+    const created_date = event.target.elements.created_date.value;
     const newlist = lists.map((li) =>
       li.id === updateState
-        ? { ...li, name: name, price: price, category: category }
+        ? { ...li, name: name, created_date: created_date, category: category }
         : li
     );
 
@@ -171,10 +171,10 @@ function EditList({ current, lists, setList }) {
     setList(newlist);
   }
 
-  function handInputprice(event) {
+  function handInputcreated_date(event) {
     const value = event.target.value;
     const newlist = lists.map((li) =>
-      li.id === current.id ? { ...li, price: value } : li
+      li.id === current.id ? { ...li, created_date: value } : li
     );
 
     setList(newlist);
@@ -201,9 +201,9 @@ function EditList({ current, lists, setList }) {
       <td>
         <input
           type="text"
-          onChange={handInputprice}
-          name="price"
-          value={current.price}
+          onChange={handInputcreated_date}
+          name="created_date"
+          value={current.created_date}
         />
       </td>
       <td>
@@ -216,19 +216,19 @@ function EditList({ current, lists, setList }) {
 function AddList({ setList }) {
   const nameRef = useRef();
   const categoryRef = useRef();
-  const priceRef = useRef();
+  const created_dateRef = useRef();
   //To submit when we handle submit
 
   function handleSubmit(event) {
     event.preventDefault();
     const name = event.target.elements.name.value;
     const category = event.target.elements.category.value;
-    const price = event.target.elements.price.value;
+    const created_date = event.target.elements.created_date.value;
     const newlist = {
       id: 11,
       name,
       category,
-      price,
+      created_date,
     };
     setList((prevList) => {
 //prev list +new list
@@ -236,24 +236,28 @@ function AddList({ setList }) {
     });
     nameRef.current.value = "";
     categoryRef.current.value = "";
-    priceRef.current.value = "";
+    created_dateRef.current.value = "";
   }
   return (
     <form className="addForm" onSubmit={handleSubmit}>
-      <input type="text" name="name" placeholder="Enter Name" ref={nameRef} />
+      <input type="text" name="name" placeholder="Enter Name"
+       ref={nameRef} />
+       <br/>
       <input
         type="text"
         name="category"
         placeholder="Enter Category"
         ref={categoryRef}
-      />
+      /> 
+      <br/>
       <input
         type="text"
-        name="price"
-        placeholder="Enter Price"
-        ref={priceRef}
+        name="created_date"
+        placeholder="Enter created_date"
+        ref={created_dateRef}
       />
-      <button type="submit">Add Category</button>
+      <br/>
+      <button className="btn btn-primary "type="submit">Add Category</button>
     </form>
   );
 }

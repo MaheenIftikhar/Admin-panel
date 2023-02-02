@@ -9,7 +9,7 @@
   .sellers__wrapper {
     padding: 20px;
     border-radius: 5px;
-    background: rgb(254, 168, 8);
+    background: white;
     height: 600px;
     width: 100%;
     
@@ -21,4 +21,22 @@
     color: rgb(6, 6, 6);
     
     margin-bottom: 4rem;
+  }
+
+  table td {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(245, 146, 9);
+    text-align: center;
+    color: white;
+  }
+  thead td {
+  color:black;
+  font-size: 18px;
+  font-weight: bold;
+  }
+  table td button {
+    border: 1px solid red;
+    background-color: rgb(219, 19, 19);
+    color: white;
   }

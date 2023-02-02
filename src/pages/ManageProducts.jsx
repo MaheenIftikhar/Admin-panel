@@ -15,7 +15,7 @@ function ManageProducts() {
       price:"Rs.300",
       bid_details: "10-12-21",
       status: "Active",
-      discription:"The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one.It has a 200mp camera in the rear 100mp in front perfect for selfie lovers.",
+      discription:"The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g.",
       image:"https://www.trustedreviews.com/wp-content/uploads/sites/54/2014/09/newgear2017-3.jpg"
     },
     {
@@ -108,7 +108,7 @@ function ManageProducts() {
 
         <form className="form_details">
           <table>
-            <thead className="table">
+            <thead>
               <tr>
                 <td>Name</td>
                 <td>Category</td>

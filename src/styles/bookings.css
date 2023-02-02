@@ -149,4 +149,19 @@
 .form_details{
   
   margin-left: 10px;
+  background-color: green;
+
+}
+
+table td {
+  width: 300px;
+  height: 30px;
+  background-color: rgb(245, 146, 9);
+  text-align: center;
+  color: white;
+}
+thead td {
+color:black;
+font-size: 18px;
+font-weight: bold;
 }

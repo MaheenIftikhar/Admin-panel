@@ -17,6 +17,34 @@ import { useNavigate, Link } from "react-router-dom";
       Orders: 17,
       status: "Active",
     },
+    {
+      id: 3,
+      name: "Noor Khan",
+      email: "NoorKhan@gmail.com",
+      Orders: 17,
+      status: "Active",
+    },
+    {
+      id: 4,
+      name: "Noor Khan",
+      email: "NoorKhan@gmail.com",
+      Orders: 17,
+      status: "Active",
+    },
+    {
+      id: 5,
+      name: "Noor Khan",
+      email: "NoorKhan@gmail.com",
+      Orders: 17,
+      status: "Active",
+    },
+    {
+      id: 6,
+      name: "Noor Khan",
+      email: "NoorKhan@gmail.com",
+      Orders: 17,
+      status: "Active",
+    },
   ];
   const ManageSeller=()=> {
   

@@ -46,7 +46,7 @@ const AuctionItems = [
         imgUrl: img4,
         Condition: "old",
       },
-      {
+     {/* {
         id: "05",
         Name: "Porshe 718 Cayman S",
         Category: "Audi",
@@ -105,7 +105,7 @@ const AuctionItems = [
         Price: 5000,
         imgUrl: img3,
         Condition: "old",
-      },*/
+      },*/}
 
 
 ]

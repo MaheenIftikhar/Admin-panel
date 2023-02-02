@@ -4,7 +4,7 @@ import "../styles/sell-car.css";
 import TrackingChart from "../charts/TrackingChart";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 
-const SellCar = () => {
+const SoldProduct = () => {
   const percentage = 55;
   const percentage02 = 45;
   return (
@@ -163,4 +163,4 @@ const SellCar = () => {
   );
 };
 
-export default SellCar;
+export default SoldProduct;
